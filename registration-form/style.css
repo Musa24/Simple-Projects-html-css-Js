@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #548CA8;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  background: #476072;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.container .form-group{
+  margin: 20px 0 40px;
+  width: 300px;
+  position: relative;
+}
+
+.container .form-group input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2rem;
+  
+}
+
+.container .form-group label{
+ position: absolute;
+ top: 15px;
+ left: 0;
+ transition: transform 0.2s;
+}
+
+
+.container .form-group input:focus{
+  outline: none;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label{
+   transform: translateY(-16px);
+   opacity: 0.8;
+ 
+}
+
+
+
+.container  button{
+  padding: 10px 20px;
+  background-color: #548CA8;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+
+.container  button:active{
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.container a{
+  text-decoration: none;
+  color: #548CA8;
+  font-size: 1.2rem;
+}
