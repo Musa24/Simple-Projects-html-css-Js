@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #caf0f8;
+}
+
+.todos-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.todos-container h1 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.todos-input {
+  display: flex;
+}
+
+.todos-input input,
+button {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #023e8a;
+}
+
+.todos-input input:focus {
+  outline: none;
+  border: 1px solid #023e8a;
+}
+
+.todos-input button {
+  border: none;
+  color: #023e8a;
+  border: 1px solid #023e8a;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.todos-input input {
+  flex: 1;
+}
+
+.todos-items {
+  margin: 10px 0;
+}
+
+.todos-items .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.todo-icons {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-trash-alt {
+  color: #ff3f00;
+}
+
+.fa-check-circle {
+  color: #0077b6;
+}
+
+.fa-edit {
+  color: #03045e;
+}
+
+.todo-done > div {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.clear-btn {
+  cursor: pointer;
+  background-color: transparent;
+  color: #0077b6;
+  margin-top: 3rem;
+}
+
+.clear-btn.show {
+  display: none;
+}
